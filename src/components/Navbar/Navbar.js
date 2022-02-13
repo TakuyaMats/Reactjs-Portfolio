@@ -35,10 +35,11 @@ const ResponsiveAppBar = () => {
     };
 
     return (
-    <AppBar position="static">
+    <AppBar position="static" color="default">
         <Container maxWidth="xl">
         <Toolbar disableGutters>
             <Typography
+            fontFamily="meno-banner"
             variant="h6"
             noWrap
             component="div"
@@ -84,6 +85,7 @@ const ResponsiveAppBar = () => {
             </Menu>
             </Box>
             <Typography
+            fontFamily="meno-banner"
             variant="h6"
             noWrap
             component="div"
@@ -96,7 +98,7 @@ const ResponsiveAppBar = () => {
                 <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ margin: 5, fontFamily: 'meno-banner', fontWeight: '600px', fontSize: '16px', my: 2, color: 'black', display: 'block' }}
                 >
                 {page}
                 </Button>
@@ -104,33 +106,7 @@ const ResponsiveAppBar = () => {
             </Box>
 
             <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-                <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt="Takuya Matsumoto" src="/static/images/avatar/2.jpg" />
-                </IconButton>
-            </Tooltip>
-            <Menu
-                sx={{ mt: '45px' }}
-                id="menu-appbar"
-                anchorEl={anchorElUser}
-                anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-                }}
-                keepMounted
-                transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-                }}
-                open={Boolean(anchorElUser)}
-                onClose={handleCloseUserMenu}
-            >
-                {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-                ))}
-            </Menu>
             </Box>
         </Toolbar>
         </Container>

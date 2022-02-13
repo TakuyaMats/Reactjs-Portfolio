@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import MenuAppBar from '../components/Navbar/Navbar';
+import HeroSection from '../components/HeroSection/HeroSection';
 
 const HomeStyle = styled.div`
         /* .hero {
@@ -20,6 +21,7 @@ function Home() {
         <HomeStyle>
             {/* <div className="hero"> */}
                 <MenuAppBar />
+                <HeroSection />
             {/* </div> */}
         </HomeStyle>
     )

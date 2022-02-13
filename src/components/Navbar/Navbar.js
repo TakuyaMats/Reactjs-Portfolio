@@ -13,26 +13,18 @@ import MenuItem from '@mui/material/MenuItem';
 import customAvatar from '../../assets/images/myAvatar.png';
 
 const pages = ['Home', 'About', 'Projects', 'Contact'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const ResponsiveAppBar = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
-    const [anchorElUser, setAnchorElUser] = React.useState(null);
 
     const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
-    };
-    const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
     };
 
     const handleCloseNavMenu = () => {
     setAnchorElNav(null);
     };
 
-    const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-    };
 
     return (
     <AppBar position="static" color="default">

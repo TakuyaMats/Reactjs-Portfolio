@@ -9,8 +9,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import customAvatar from '../../assets/images/myAvatar.png';
 
 const pages = ['Home', 'About', 'Projects', 'Contact'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -106,7 +106,7 @@ const ResponsiveAppBar = () => {
             </Box>
 
             <Box sx={{ flexGrow: 0 }}>
-                <Avatar alt="Takuya Matsumoto" src="/static/images/avatar/2.jpg" />
+                <Avatar alt="Takuya Matsumoto" src={customAvatar} />
             </Box>
         </Toolbar>
         </Container>

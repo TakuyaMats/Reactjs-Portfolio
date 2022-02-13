@@ -6,6 +6,7 @@ import heroAvatar from '../../assets/images/heroAvatar.png';
 
 const HeroSectionStyle = styled.div`
     background-color: #E5E8DD
+
 `;
 
 const HeroSection = () => {
@@ -18,7 +19,7 @@ const HeroSection = () => {
                     </Grid>
                     <Grid item xs={8}>
                         <Container id="hero-container">
-                            <img id="hero-img" src={heroAvatar} alt="Hero Avatar"/>
+                            <img id="hero-img" src={heroAvatar} alt="Hero Avatar" style={{ height: '100%', width: '100%', align: "center"}}/>
                         </Container>
                     </Grid>
                 </Grid>

@@ -1,11 +1,13 @@
-import { orange } from '@mui/material/colors';
 import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
 
 
 const theme = createTheme({
-    status: {
-        danger: orange[500],
-    },
+    breakpoints: {
+        values: {
+            md: 750,
+            lg: 1050,
+        }
+    }
 });
 
 export default theme;

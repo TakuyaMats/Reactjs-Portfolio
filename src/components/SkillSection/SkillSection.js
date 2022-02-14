@@ -23,7 +23,31 @@ const useStyles = makeStyles(() => ({
     },
     singlePaper: {
         [theme.breakpoints.down('md')]: {
-            marginBottom: '5%'
+            marginBottom: '5%',
+        },
+        h4: {
+            marginLeft: '65px'
+        } 
+    },
+    h4: {
+        [theme.breakpoints.down('lg')]: {
+            marginLeft: '55px'
+        },
+        [theme.breakpoints.up('lg')]: {
+            marginLeft: '85px'
+        },
+        [theme.breakpoints.down('md')]: {
+            marginLeft: '85px'
+        },
+    },
+    tablet: {
+        [theme.breakpoints.down('lg')]: {
+            width: 220,
+            height: 320
+        },
+        [theme.breakpoints.down('md')]: {
+            height: 440,
+            width: 350,
         }
     }
 }))
@@ -52,6 +76,7 @@ const SkillSection = (props) => {
                 <Grid container justifyContent="center" spacing={spacing}>
                     <Grid>
                     <Paper
+                        className={classes.tablet}
                         id="skillSection-panels"
                         sx={{
                         height: 440,
@@ -62,7 +87,7 @@ const SkillSection = (props) => {
                         }}
                     >
                     <img src={Glasses} alt="Glasses" style={{ height: '20%', width: '25%', marginLeft: '85px', marginTop: '12px', marginBottom: '2px' }}/>
-                    <h4 id="skillSection-h4" style={{ marginLeft: '85px', marginTop: '12px' }}>FrontEnd</h4>
+                    <h4 className={classes.h4} id="skillSection-h4" style={{ marginTop: '12px' }}>FrontEnd</h4>
                         <List>
                             <ListItem style={{ marginLeft: 22 }}>
                                 <HtmlIcon style={{ fontSize: 45, marginRight: 8 }}/>
@@ -78,6 +103,7 @@ const SkillSection = (props) => {
                 <Grid container justifyContent="center" spacing={spacing}>
                     <Grid>
                     <Paper
+                        className={classes.tablet}
                         id="skillSection-panels"
                         sx={{
                         height: 440,
@@ -88,7 +114,7 @@ const SkillSection = (props) => {
                         }}
                     >
                         <img src={Mug} alt="Mug" style={{ height: '20%', width: '25%', marginLeft: '85px', marginTop: '12px', marginBottom: '2px' }}/>
-                        <h4 style={{ marginLeft: '85px', marginTop: '12px' }}>BackEnd</h4>
+                        <h4 className={classes.h4} style={{ marginTop: '12px' }}>BackEnd</h4>
                     </Paper>
                     </Grid>
                 </Grid>
@@ -97,6 +123,7 @@ const SkillSection = (props) => {
                 <Grid container justifyContent="center" spacing={spacing}>
                     <Grid>
                     <Paper
+                        className={classes.tablet}
                         id="skillSection-panels"
                         sx={{
                         height: 440,
@@ -107,7 +134,7 @@ const SkillSection = (props) => {
                         }}
                     >
                     <img src={Cube} alt="Cube" style={{ height: '20%', width: '25%', marginLeft: '85px', marginTop: '12px', marginBottom: '2px'}}/>
-                    <h4 id="skillSection-h4" style={{ marginLeft: '85px', marginTop: '12px' }}>Design</h4>
+                    <h4 className={classes.h4} id="skillSection-h4" style={{ marginTop: '12px' }}>Design</h4>
                     </Paper>
                     </Grid>
                 </Grid>

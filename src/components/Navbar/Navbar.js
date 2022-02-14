@@ -27,7 +27,7 @@ const ResponsiveAppBar = () => {
 
 
     return (
-    <AppBar position="static" color="default">
+    <AppBar position="static" color="default" sx={{ marginBottom: 2 }}>
         <Container maxWidth="xl">
         <Toolbar disableGutters>
             <Typography
@@ -77,6 +77,7 @@ const ResponsiveAppBar = () => {
             </Menu>
             </Box>
             <Typography
+            color="black"
             fontFamily="meno-banner"
             variant="h6"
             noWrap

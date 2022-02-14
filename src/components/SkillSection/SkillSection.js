@@ -26,7 +26,7 @@ const SkillSection = () => {
             </Grid>
             <hr></hr>
         </Grid>
-        <Grid sx={{ flexGrow: 1 }} container spacing={2} style={{ backgroundColor: '#E5E8DD', maxHeight: '100%', marginTop: 12 }}>
+        <Grid id="SkillSection-Container" sx={{ flexGrow: 1 }} container spacing={2} style={{ backgroundColor: '#E5E8DD', maxHeight: '100%', marginTop: 12 }}>
             <Grid item xs={4}>
                 <Grid container justifyContent="center" spacing={spacing}>
                     <Grid>

@@ -6,6 +6,10 @@
     color: white;
 }
 
+#SkillSection-Container {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 hr {
     display: block;

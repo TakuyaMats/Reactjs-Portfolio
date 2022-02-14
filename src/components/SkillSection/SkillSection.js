@@ -9,10 +9,31 @@ import JavascriptIcon from '@mui/icons-material/Javascript';
 import Glasses from '../../assets/images/glasses.png';
 import Cube from '../../assets/images/cube.png';
 import Mug from '../../assets/images/mug.png';
+import { makeStyles } from '@mui/styles';
 import './SkillSection.css';
+import theme from './theme';
 
-const SkillSection = () => {
+const useStyles = makeStyles(() => ({
+    paper: {
+        [theme.breakpoints.down('md')]: {
+            display: 'flex',
+            flexDirection: 'column',
+            marginLeft: '33%'
+        }
+    },
+    singlePaper: {
+        [theme.breakpoints.down('md')]: {
+            marginBottom: '5%'
+        }
+    }
+}))
+
+
+
+const SkillSection = (props) => {
     const [spacing, setSpacing] = React.useState(2);
+
+    const classes = useStyles(props);
 
     const handleChange = (event) => {
     setSpacing(Number(event.target.value));
@@ -26,8 +47,8 @@ const SkillSection = () => {
             </Grid>
             <hr></hr>
         </Grid>
-        <Grid id="SkillSection-Container" sx={{ flexGrow: 1 }} container spacing={2} style={{ backgroundColor: '#E5E8DD', maxHeight: '100%', marginTop: 12 }}>
-            <Grid item xs={4}>
+        <Grid className={classes.paper} id="SkillSection-Container" sx={{ flexGrow: 1 }} container spacing={2} style={{ backgroundColor: '#E5E8DD', maxHeight: '100%', marginTop: 12 }}>
+            <Grid className={classes.singlePaper} item xs={4}>
                 <Grid container justifyContent="center" spacing={spacing}>
                     <Grid>
                     <Paper
@@ -53,7 +74,7 @@ const SkillSection = () => {
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid item xs={4}>
+            <Grid className={classes.singlePaper} item xs={4}>
                 <Grid container justifyContent="center" spacing={spacing}>
                     <Grid>
                     <Paper
@@ -72,7 +93,7 @@ const SkillSection = () => {
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid item xs={4}>
+            <Grid className={classes.singlePaper} item xs={4}>
                 <Grid container justifyContent="center" spacing={spacing}>
                     <Grid>
                     <Paper

@@ -1,0 +1,7 @@
+#skillSection-panels:hover {
+    background-color: #479547;
+}
+
+#skillSection-panels:hover > h4 {
+    color: white;
+}

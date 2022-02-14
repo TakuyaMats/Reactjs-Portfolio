@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import MenuAppBar from '../components/Navbar/Navbar';
 import HeroSection from '../components/HeroSection/HeroSection';
 import ProjectSection from '../components/ProjectSection/ProjectSection';
+import SkillSection from '../components/SkillSection/SkillSection';
 
 const HomeStyle = styled.div`
         /* .hero {
@@ -23,7 +24,7 @@ function Home() {
             {/* <div className="hero"> */}
                 <MenuAppBar />
                 <HeroSection />
-                <ProjectSection />
+                <SkillSection />
             {/* </div> */}
         </HomeStyle>
     )

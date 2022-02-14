@@ -37,6 +37,14 @@ h3 {
     /* letter-spacing: -20px; */
 }
 
+h4 {
+    font-family: 'meno-banner', serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 22px;
+    /* letter-spacing: -20px; */
+}
+
 `
 
 export default Typography;

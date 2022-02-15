@@ -81,7 +81,7 @@ const SkillSection = (props) => {
                         'border-radius': '20% 80% 40% 20% / 100% 30% 60% 85%'
                         }}
                     >
-                        <img src={Mug} alt="Mug" style={{ height: '20%', width: '25%', marginLeft: '85px', marginTop: '12px', marginBottom: '2px' }}/>
+                        <img src={Mug} alt="Mug" style={{ height: '20%', width: '25%', marginLeft: '85px', marginTop: '12px', marginBottom: '4px' }}/>
                         <h4 className={classes.h4} style={{ marginTop: '12px' }}>BackEnd</h4>
                         <List id="items">
                             <ListItem className={classes.listItem5}>
@@ -115,7 +115,7 @@ const SkillSection = (props) => {
                         'border-radius': '20% 40% 60% 20% / 30% 50% 30% 25%'
                         }}
                     >
-                    <img src={Cube} alt="Cube" style={{ height: '20%', width: '25%', marginLeft: '85px', marginTop: '12px', marginBottom: '2px'}}/>
+                    <img src={Cube} alt="Cube" style={{ height: '20%', width: '25%', marginLeft: '85px', marginTop: '12px', marginBottom: '6px'}}/>
                     <h4 className={classes.h4} style={{ marginTop: '12px' }}>Tools</h4>
                     <List id="items">
                             <ListItem className={classes.listItem3}>

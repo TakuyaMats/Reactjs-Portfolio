@@ -6,6 +6,10 @@
     color: white;
 }
 
+#skillSection-panels:hover > #items {
+    color: white;
+}
+
 #SkillSection-Container {
     display: flex;
     flex-wrap: wrap;

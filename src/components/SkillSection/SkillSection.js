@@ -3,55 +3,11 @@ import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-import HtmlIcon from '@mui/icons-material/Html';
-import CssIcon from '@mui/icons-material/Css';
-import JavascriptIcon from '@mui/icons-material/Javascript';
 import Glasses from '../../assets/images/glasses.png';
 import Cube from '../../assets/images/cube.png';
 import Mug from '../../assets/images/mug.png';
-import { makeStyles } from '@mui/styles';
 import './SkillSection.css';
-import theme from './theme';
-
-const useStyles = makeStyles(() => ({
-    paper: {
-        [theme.breakpoints.down('md')]: {
-            display: 'flex',
-            flexDirection: 'column',
-            marginLeft: '33%'
-        }
-    },
-    singlePaper: {
-        [theme.breakpoints.down('md')]: {
-            marginBottom: '5%',
-        },
-        h4: {
-            marginLeft: '65px'
-        } 
-    },
-    h4: {
-        [theme.breakpoints.down('lg')]: {
-            marginLeft: '55px'
-        },
-        [theme.breakpoints.up('lg')]: {
-            marginLeft: '85px'
-        },
-        [theme.breakpoints.down('md')]: {
-            marginLeft: '85px'
-        },
-    },
-    tablet: {
-        [theme.breakpoints.down('lg')]: {
-            width: 220,
-            height: 320
-        },
-        [theme.breakpoints.down('md')]: {
-            height: 440,
-            width: 350,
-        }
-    }
-}))
-
+import useStyles from './useStyles';
 
 
 const SkillSection = (props) => {
@@ -87,14 +43,26 @@ const SkillSection = (props) => {
                         }}
                     >
                     <img src={Glasses} alt="Glasses" style={{ height: '20%', width: '25%', marginLeft: '85px', marginTop: '12px', marginBottom: '2px' }}/>
-                    <h4 className={classes.h4} id="skillSection-h4" style={{ marginTop: '12px' }}>FrontEnd</h4>
-                        <List>
-                            <ListItem style={{ marginLeft: 22 }}>
-                                <HtmlIcon style={{ fontSize: 45, marginRight: 8 }}/>
-                                <CssIcon style={{ fontSize: 45, marginRight: 8 }}/>
-                                <JavascriptIcon style={{ fontSize: 45 }}/>
-                            </ListItem>
-                        </List>
+                    <h4 className={classes.h4} style={{ marginTop: '12px' }}>FrontEnd</h4>
+                    <List id="items">
+                        <ListItem className={classes.listItem1}>
+                            <p className={classes.p1}>HTML</p>
+                            <p className={classes.p1}>CSS</p>
+                            <p className={classes.p1}>Javascript</p>
+                        </ListItem>
+                        <ListItem className={classes.listItem2}>
+                            <p className={classes.p2}>Material.ui</p>
+                            <p className={classes.p2}>Bootstrap</p>
+                        </ListItem>
+                        <ListItem className={classes.listItem3}>
+                            <p className={classes.p3}>Materialize.css</p>
+                            <p className={classes.p3}>Handlebar</p>
+                        </ListItem>
+                        <ListItem className={classes.listItem4}>
+                            <p className={classes.p4}>React</p>
+                            <p className={classes.p4}>jQuery</p>
+                        </ListItem>
+                    </List>
                     </Paper>
                     </Grid>
                 </Grid>
@@ -115,6 +83,20 @@ const SkillSection = (props) => {
                     >
                         <img src={Mug} alt="Mug" style={{ height: '20%', width: '25%', marginLeft: '85px', marginTop: '12px', marginBottom: '2px' }}/>
                         <h4 className={classes.h4} style={{ marginTop: '12px' }}>BackEnd</h4>
+                        <List id="items">
+                            <ListItem className={classes.listItem5}>
+                                <p className={classes.p1}>Node.js</p>
+                                <p className={classes.p1}>Express.js</p>
+                                <p className={classes.p1}>NPM</p>
+                            </ListItem>
+                            <ListItem className={classes.listItem6}>
+                                <p className={classes.p4}>MongoDB</p>
+                                <p className={classes.p4}>MySQL</p>
+                            </ListItem>
+                            <ListItem className={classes.listItem7}>
+                                <p className={classes.p5}>Insomnia</p>
+                            </ListItem>
+                        </List>
                     </Paper>
                     </Grid>
                 </Grid>
@@ -134,7 +116,21 @@ const SkillSection = (props) => {
                         }}
                     >
                     <img src={Cube} alt="Cube" style={{ height: '20%', width: '25%', marginLeft: '85px', marginTop: '12px', marginBottom: '2px'}}/>
-                    <h4 className={classes.h4} id="skillSection-h4" style={{ marginTop: '12px' }}>Design</h4>
+                    <h4 className={classes.h4} style={{ marginTop: '12px' }}>Tools</h4>
+                    <List id="items">
+                            <ListItem className={classes.listItem3}>
+                                <p className={classes.p6}>Figma</p>
+                                <p className={classes.p6}>Invision</p>
+                                <p className={classes.p6}>Photoshop</p>
+                            </ListItem>
+                            <ListItem className={classes.listItem8}>
+                                <p className={classes.p3}>Heroku</p>
+                                <p className={classes.p3}>Github Pages</p>
+                            </ListItem>
+                            <ListItem className={classes.listItem7}>
+                                <p className={classes.p7}>Git</p>
+                            </ListItem>
+                        </List>
                     </Paper>
                     </Grid>
                 </Grid>

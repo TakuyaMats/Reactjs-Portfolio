@@ -2,7 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import MenuAppBar from '../components/Navbar/Navbar';
 import HeroSection from '../components/HeroSection/HeroSection';
-import ProjectSection from '../components/ProjectSection/ProjectSection';
+// import ProjectSection from '../components/ProjectSection/ProjectSection';
+import AboutSection from '../components/AboutSection/AboutSection';
 import SkillSection from '../components/SkillSection/SkillSection';
 
 const HomeStyle = styled.div`
@@ -25,6 +26,7 @@ function Home() {
                 <MenuAppBar />
                 <HeroSection />
                 <SkillSection />
+                <AboutSection />
             {/* </div> */}
         </HomeStyle>
     )

@@ -64,7 +64,7 @@ function ProjectSection(props) {
         <ProjectSectionStyle>
             <div className="container">
                 {/* <SectionTitle heading="Projects" subheading="some of my recent works" /> */}
-                <h3 className={classes.h4}>Projects</h3>
+                <h3 className={classes.h3}>Projects</h3>
                 <p className={classes.p}>Some of my recent works</p>
                 <hr></hr>
                 <div className={classes.projects__allItems}>

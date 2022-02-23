@@ -12,7 +12,7 @@ const useStyles = makeStyles(() => ({
         gap: '3rem',
         marginTop: '5rem',
     },
-    h4: {
+    h3: {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',

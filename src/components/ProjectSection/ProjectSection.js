@@ -6,16 +6,18 @@ import projects from '../../assets/data/projects';
 import ProjectItem from '../ProjectItem/ProjectItem';
 import styled from 'styled-components';
 import 'swiper/swiper-bundle.min.css';
+import useStyles from './useStyles';
 
 SwiperCore.use([Navigation]);
 
 const ProjectSectionStyle = styled.div`
     padding: 10rem 0;
-    .project__allItems {
+    /* .project__allItems {
+        border: 2px solid #479547;
         display: flex;
         gap: 3rem;
         margin-top: 5rem;
-    }
+    } */
     .swiper-container {
         padding-top: 8rem;
         max-width: 100%;
@@ -31,7 +33,7 @@ const ProjectSectionStyle = styled.div`
         left: auto;
         top: 50px;
         transform: translateY(-50%);
-        color: var(--gray-1);
+        color: #487047;
         border-radius: 8px;
     }
     .swiper-button-next {
@@ -55,14 +57,17 @@ const ProjectSectionStyle = styled.div`
     }
 `;
 
-function ProjectSection() {
+function ProjectSection(props) {
+    const classes = useStyles(props);
+
     return (
         <ProjectSectionStyle>
             <div className="container">
                 {/* <SectionTitle heading="Projects" subheading="some of my recent works" /> */}
-                <h4>Some of my recent works</h4>
-                <h3>Projects</h3>
-                <div className="projects__allItems">
+                <h3 className={classes.h4}>Projects</h3>
+                <p className={classes.p}>Some of my recent works</p>
+                <hr></hr>
+                <div className={classes.projects__allItems}>
                     <Swiper 
                     spaceBetween={30}
                     slidesPerView={1}

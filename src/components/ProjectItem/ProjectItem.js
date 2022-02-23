@@ -6,6 +6,8 @@ import styled from 'styled-components';
 import useStyles from './useStyles';
 
 const ProjectItemStyles = styled.div`
+    margin: 8px;
+
     @media only screen and (max-width: 768px) {
         .projectItem__img {
             height: 350px;

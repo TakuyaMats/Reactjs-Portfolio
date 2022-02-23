@@ -5,6 +5,7 @@ import HeroSection from '../components/HeroSection/HeroSection';
 import ProjectSection from '../components/ProjectSection/ProjectSection';
 import AboutSection from '../components/AboutSection/AboutSection';
 import SkillSection from '../components/SkillSection/SkillSection';
+import Footer from '../components/Footer/Footer';
 
 const HomeStyle = styled.div`
         /* .hero {
@@ -28,6 +29,7 @@ function Home() {
                 <SkillSection />
                 <AboutSection />
                 <ProjectSection />
+                <Footer />
             {/* </div> */}
         </HomeStyle>
     )

@@ -27,7 +27,7 @@ const ResponsiveAppBar = () => {
 
 
     return (
-    <AppBar position="static" color="default" sx={{ marginBottom: 2 }}>
+    <AppBar position="static" sx={{ marginBottom: 2, backgroundColor: '#E5E8DD' }}>
         <Container maxWidth="xl">
         <Toolbar disableGutters>
             <Typography
@@ -35,12 +35,12 @@ const ResponsiveAppBar = () => {
             variant="h6"
             noWrap
             component="div"
-            sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
+            sx={{ mr: 2, color: 'black', display: { xs: 'none', md: 'flex' } }}
             >
             TM
             </Typography>
 
-            <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+            <Box sx={{ flexGrow: 1, color: 'black', display: { xs: 'flex', md: 'none' } }}>
             <IconButton
                 size="large"
                 aria-label="account of current user"

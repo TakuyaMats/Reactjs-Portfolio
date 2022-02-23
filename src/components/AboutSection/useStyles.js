@@ -86,6 +86,13 @@ const useStyles = makeStyles(() => ({
             borderTop: '1px solid #aaaaaa',
             borderBottom: '1px solid #ffffff',
         }
+    },
+    image: {
+        [theme.breakpoints.up('lg')]: {
+            display: 'flex',
+            justifyContent: 'center',
+            marginTop: 120,
+        }
     }
 }));
 

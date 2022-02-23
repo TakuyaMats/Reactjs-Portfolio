@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import AboutMeImage from '../../assets/images/AboutMe.png';
+import Button from '@mui/material/Button';
 import useStyles from './useStyles';
 
 const AboutSection = (props) => {
@@ -13,6 +14,7 @@ const AboutSection = (props) => {
             <Grid container spacing={2} columns={16}>
                 <Grid item xs={8}>
                     <Container id="about-container">
+                        {/* TODO edit the image background so it's consistent with the page. */}
                         <img id="about-img" src={AboutMeImage} alt="About Illustration" style={{ height: '100%', width: '100%', align: "center"}}/>
                     </Container>
                 </Grid>
@@ -22,6 +24,10 @@ const AboutSection = (props) => {
                         <hr className={classes.hr}></hr>
                         <p className={classes.p} style={{  display: 'flex', justifyContent: 'flex-end', color: 'grey' }}>             Previously a digital technician with experience in the photography industry, with skills in photo-shoots, management, and adobe photoshop.
                         I love music and always love sharing new music with my friends.</p>
+                    </Container>
+                    <Container className={classes.image}>
+                        <h4>My Photography Site!</h4>
+                        <Button sx={{ margin: 8 }} variant="contained" size="large">Click Me!</Button>
                     </Container>
                 </Grid>
             </Grid>

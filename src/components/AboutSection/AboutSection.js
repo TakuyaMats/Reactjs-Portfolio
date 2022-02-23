@@ -14,7 +14,6 @@ const AboutSection = (props) => {
             <Grid container spacing={2} columns={16}>
                 <Grid item xs={8}>
                     <Container id="about-container">
-                        {/* TODO edit the image background so it's consistent with the page. */}
                         <img id="about-img" src={AboutMeImage} alt="About Illustration" style={{ height: '100%', width: '100%', align: "center"}}/>
                     </Container>
                 </Grid>

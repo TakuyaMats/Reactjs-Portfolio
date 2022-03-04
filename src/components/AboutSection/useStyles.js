@@ -3,7 +3,15 @@ import theme from '../../utils/theme';
 
 const useStyles = makeStyles(() => ({
     margin: {
-        marginTop: '160px'
+        [theme.breakpoints.up('lg')]: {
+            marginTop: '160px'
+        },
+        [theme.breakpoints.down('lg')]: {
+            marginTop: '140px'
+        },
+        [theme.breakpoints.down('md')]: {
+            marginTop: '100px'
+        },
     },
     h3: {
         [theme.breakpoints.up('lg')]: {
@@ -24,6 +32,20 @@ const useStyles = makeStyles(() => ({
             lineHeight: 1.5
         },
     },
+    h4: {
+        [theme.breakpoints.up('lg')]: {
+            fontSize: 28,
+            marginRight: 18,
+        },
+        [theme.breakpoints.down('lg')]: {
+            fontSize: 16,
+            marginLeft: 5
+        },
+        [theme.breakpoints.down('md')]: {
+            fontSize: 14,
+            marginLeft: 5,
+        },
+    },
     p: {
         [theme.breakpoints.up('lg')]: {
             fontSize: 18
@@ -33,7 +55,7 @@ const useStyles = makeStyles(() => ({
         },
         [theme.breakpoints.down('md')]: {
             margin: 5,
-            fontSize: 14,
+            fontSize: 11,
             lineHeight: 2
         },
     },
@@ -93,7 +115,22 @@ const useStyles = makeStyles(() => ({
             justifyContent: 'center',
             marginTop: 120,
         }
-    }
+    },
+    btn: {
+        [theme.breakpoints.up('lg')]: {
+            margin: 8,
+            marginTop: 20,
+            fontSize: 17,
+        },
+        [theme.breakpoints.down('lg')]: {
+            marginTop: 20,
+            fontSize: 14,
+        },
+        [theme.breakpoints.down('md')]: {
+            marginTop: 20,
+            fontSize: 6,
+        },
+    },
 }));
 
 export default useStyles;

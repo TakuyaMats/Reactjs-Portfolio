@@ -25,8 +25,8 @@ const AboutSection = (props) => {
                         I love music and always love sharing new music with my friends.</p>
                     </Container>
                     <Container className={classes.image}>
-                        <h4>My Photography Site!</h4>
-                        <Button sx={{ margin: 8 }} variant="contained" size="large">Click Me!</Button>
+                        <h4 className={classes.h4}>My Photography Site!</h4>
+                        <Button className={classes.btn} sx={{ margin: 8 }} variant="contained">Click Me!</Button>
                     </Container>
                 </Grid>
             </Grid>

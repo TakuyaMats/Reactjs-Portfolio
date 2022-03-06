@@ -16,6 +16,13 @@ import { HashLink } from "react-router-hash-link";
 
 const pages = ['Home', 'Skills', 'About', 'Projects', 'Contact'];
 
+
+
+// const pages = {{ '<HashLink to="/">Home</HashLink>', '<HashLink to="/">Home</HashLink>' }}
+
+
+
+
 const ResponsiveAppBar = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
 
@@ -26,7 +33,6 @@ const ResponsiveAppBar = () => {
     const handleCloseNavMenu = () => {
     setAnchorElNav(null);
     };
-
 
     return (
     <AppBar position="static" sx={{ marginBottom: 2, backgroundColor: '#E5E8DD' }}>
@@ -71,11 +77,11 @@ const ResponsiveAppBar = () => {
                 display: { xs: 'block', md: 'none' },
                 }}
             >
-                {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-                ))}
+                <MenuItem onClick={handleCloseNavMenu}><HashLink to="/" style={{ color: 'black', textDecoration: 'inherit' }}>Home</HashLink></MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}><HashLink to="/#skill" style={{ color: 'black', textDecoration: 'inherit' }}>Skill</HashLink></MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}><HashLink to="/#about" style={{ color: 'black', textDecoration: 'inherit' }}>About</HashLink></MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}><HashLink to="/#project" style={{ color: 'black', textDecoration: 'inherit' }}>Project</HashLink></MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}><HashLink to="/#contact" style={{ color: 'black', textDecoration: 'inherit' }}>Contact</HashLink></MenuItem>
             </Menu>
             </Box>
             <Typography
@@ -86,7 +92,7 @@ const ResponsiveAppBar = () => {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
             >
-            LOGO
+            Takuya Matsumoto
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                 <HashLink to="/">

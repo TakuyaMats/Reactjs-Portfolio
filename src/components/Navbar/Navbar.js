@@ -11,8 +11,10 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import customAvatar from '../../assets/images/myAvatar.png';
+import { Link } from 'react-router-dom';
+import { HashLink } from "react-router-hash-link";
 
-const pages = ['Home', 'About', 'Projects', 'Contact'];
+const pages = ['Home', 'Skills', 'About', 'Projects', 'Contact'];
 
 const ResponsiveAppBar = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -87,15 +89,41 @@ const ResponsiveAppBar = () => {
             LOGO
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
-                <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ margin: 5, fontFamily: 'meno-banner', fontWeight: '600px', fontSize: '16px', my: 2, color: 'black', display: 'block' }}
-                >
-                {page}
-                </Button>
-            ))}
+                <HashLink to="/">
+                    <Button
+                    key={1}
+                    onClick={handleCloseNavMenu}
+                    sx={{ margin: 5, fontFamily: 'meno-banner', fontWeight: '600px', fontSize: '16px', my: 2, color: 'black', display: 'block' }}
+                    >Home</Button>
+                </HashLink>
+                <HashLink to="/#skill">
+                    <Button
+                    key={2}
+                    onClick={handleCloseNavMenu}
+                    sx={{ margin: 5, fontFamily: 'meno-banner', fontWeight: '600px', fontSize: '16px', my: 2, color: 'black', display: 'block' }}
+                    >Skills</Button>
+                </HashLink>
+                <HashLink smooth to='/#about'>
+                    <Button
+                    key={3}
+                    // onClick={handleCloseNavMenu}
+                    sx={{ margin: 5, fontFamily: 'meno-banner', fontWeight: '600px', fontSize: '16px', my: 2, color: 'black', display: 'block' }}
+                    >About</Button>
+                </HashLink>
+                <HashLink to="/#project">
+                    <Button
+                    key={4}
+                    onClick={handleCloseNavMenu}
+                    sx={{ margin: 5, fontFamily: 'meno-banner', fontWeight: '600px', fontSize: '16px', my: 2, color: 'black', display: 'block' }}
+                    >Projects</Button>
+                </HashLink>
+                <HashLink to="/#contact">
+                    <Button
+                    key={5}
+                    onClick={handleCloseNavMenu}
+                    sx={{ margin: 5, fontFamily: 'meno-banner', fontWeight: '600px', fontSize: '16px', my: 2, color: 'black', display: 'block' }}
+                    >Contact</Button>
+                </HashLink>
             </Box>
 
             <Box sx={{ flexGrow: 0 }}>

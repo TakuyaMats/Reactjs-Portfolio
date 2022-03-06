@@ -37,6 +37,17 @@ const useStyles = makeStyles(() => ({
             lineHeight: 2
         },
     },
+    container: {
+        [theme.breakpoints.up('lg')]: {
+            padding: '10rem 0'
+        },
+        [theme.breakpoints.down('lg')]: {
+            padding: '8rem 0'
+        },
+        [theme.breakpoints.down('md')]: {
+            padding: '4rem 0'
+        },
+    }
 }));
 
 export default useStyles;

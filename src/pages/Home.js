@@ -1,11 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import MenuAppBar from '../components/Navbar/Navbar';
+// import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+// import MenuAppBar from '../components/Navbar/Navbar';
 import HeroSection from '../components/HeroSection/HeroSection';
 import ProjectSection from '../components/ProjectSection/ProjectSection';
 import AboutSection from '../components/AboutSection/AboutSection';
 import SkillSection from '../components/SkillSection/SkillSection';
 import Footer from '../components/Footer/Footer';
+import { HashLink } from "react-router-hash-link";
 
 const HomeStyle = styled.div`
         /* .hero {
@@ -23,14 +25,11 @@ const HomeStyle = styled.div`
 function Home() {
     return(
         <HomeStyle>
-            {/* <div className="hero"> */}
-                <MenuAppBar />
-                <HeroSection />
-                <SkillSection />
-                <AboutSection />
-                <ProjectSection />
-                <Footer />
-            {/* </div> */}
+            <HeroSection/>
+            <SkillSection/>
+            <AboutSection/>
+            <ProjectSection/>
+            <Footer/>
         </HomeStyle>
     )
 }

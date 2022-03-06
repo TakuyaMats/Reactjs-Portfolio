@@ -21,7 +21,7 @@ const SkillSection = (props) => {
 
     return (
         <>
-        <Grid container spacing={3}>
+        <Grid container spacing={3} id="skill">
             <Grid item xs={12} style={{ display: 'flex', justifyContent: 'center', marginTop: '80px' }}>
                 <h3>My Skills</h3>
             </Grid>

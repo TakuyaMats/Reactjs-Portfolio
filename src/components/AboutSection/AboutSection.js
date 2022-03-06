@@ -10,7 +10,7 @@ const AboutSection = (props) => {
     const classes = useStyles(props);
 
     return (
-        <Box className={classes.margin}>
+        <Box className={classes.margin} id="about">
             <Grid container spacing={2} columns={16}>
                 <Grid item xs={8}>
                     <Container id="about-container">

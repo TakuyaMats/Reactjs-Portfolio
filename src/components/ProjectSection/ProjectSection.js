@@ -1,5 +1,4 @@
 import React from 'react';
-// import SectionTitle from '../SectionTitle/SectionTitle';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import  SwiperCore, { Navigation } from 'swiper';
 import projects from '../../assets/data/projects';
@@ -11,13 +10,6 @@ import useStyles from './useStyles';
 SwiperCore.use([Navigation]);
 
 const ProjectSectionStyle = styled.div`
-    padding: 10rem 0;
-    /* .project__allItems {
-        border: 2px solid #479547;
-        display: flex;
-        gap: 3rem;
-        margin-top: 5rem;
-    } */
     .swiper-container {
         padding-top: 8rem;
         max-width: 100%;
@@ -62,8 +54,7 @@ function ProjectSection(props) {
 
     return (
         <ProjectSectionStyle>
-            <div className="container">
-                {/* <SectionTitle heading="Projects" subheading="some of my recent works" /> */}
+            <div className={classes.container} id="project">
                 <h3 className={classes.h3}>Projects</h3>
                 <p className={classes.p}>Some of my recent works</p>
                 <hr></hr>

@@ -8,7 +8,7 @@ const HeroSection = (props) => {
     const classes = useStyles(props);
 
     return (
-        <Box sx={{ flexGrow: 1, backgroundColor: '#E5E8DD'}}>
+        <Box sx={{ flexGrow: 1, backgroundColor: '#E5E8DD'}} id="/">
             <Grid container spacing={2} columns={16}>
                 <Grid item xs={8}>
                     <Container>

@@ -39,7 +39,7 @@ const FooterStyles = styled.div`
 const Footer = () => {
     return (
         <FooterStyles>
-            <div className="container">
+            <div className="container" id="contact">
                 <div className="footer__col1">
                     <h3 className="footer__col1__title">Takuya Matsumoto</h3>
                     <p style={{ fontSize: '14px', color: 'grey' }}>

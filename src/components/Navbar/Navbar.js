@@ -77,7 +77,6 @@ const ResponsiveAppBar = () => {
                 display: { xs: 'block', md: 'none' },
                 }}
             >
-                <MenuItem onClick={handleCloseNavMenu}><HashLink smooth to="/" style={{ color: 'black', textDecoration: 'inherit' }}>Home</HashLink></MenuItem>
                 <MenuItem onClick={handleCloseNavMenu}><HashLink smooth to="/#skill" style={{ color: 'black', textDecoration: 'inherit' }}>Skill</HashLink></MenuItem>
                 <MenuItem onClick={handleCloseNavMenu}><HashLink smooth to="/#about" style={{ color: 'black', textDecoration: 'inherit' }}>About</HashLink></MenuItem>
                 <MenuItem onClick={handleCloseNavMenu}><HashLink smooth to="/#project" style={{ color: 'black', textDecoration: 'inherit' }}>Project</HashLink></MenuItem>
@@ -95,13 +94,6 @@ const ResponsiveAppBar = () => {
             Takuya Matsumoto
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                <HashLink smooth to="/">
-                    <Button
-                    key={1}
-                    onClick={handleCloseNavMenu}
-                    sx={{ margin: 5, fontFamily: 'meno-banner', fontWeight: '600px', fontSize: '16px', my: 2, color: 'black', display: 'block' }}
-                    >Home</Button>
-                </HashLink>
                 <HashLink smooth to="/#skill">
                     <Button
                     key={2}
@@ -112,7 +104,7 @@ const ResponsiveAppBar = () => {
                 <HashLink smooth to='/#about'>
                     <Button
                     key={3}
-                    // onClick={handleCloseNavMenu}
+                    onClick={handleCloseNavMenu}
                     sx={{ margin: 5, fontFamily: 'meno-banner', fontWeight: '600px', fontSize: '16px', my: 2, color: 'black', display: 'block' }}
                     >About</Button>
                 </HashLink>

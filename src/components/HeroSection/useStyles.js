@@ -27,7 +27,7 @@ const useStyles = makeStyles(() => ({
             marginLeft: 72
         },
         [theme.breakpoints.down('md')]: {
-            fontSize: 10,
+            fontSize: 14,
             marginLeft: 42,
             lineHeight: 2
         },

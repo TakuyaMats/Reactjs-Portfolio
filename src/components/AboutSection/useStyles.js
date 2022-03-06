@@ -43,7 +43,7 @@ const useStyles = makeStyles(() => ({
         },
         [theme.breakpoints.down('md')]: {
             fontSize: 14,
-            marginLeft: 5,
+            marginLeft: 25,
         },
     },
     p: {
@@ -55,7 +55,7 @@ const useStyles = makeStyles(() => ({
         },
         [theme.breakpoints.down('md')]: {
             margin: 5,
-            fontSize: 11,
+            fontSize: 14,
             lineHeight: 2
         },
     },
@@ -118,6 +118,7 @@ const useStyles = makeStyles(() => ({
     },
     btn: {
         [theme.breakpoints.up('lg')]: {
+            textColor: 'white',
             margin: 8,
             marginTop: 20,
             fontSize: 17,

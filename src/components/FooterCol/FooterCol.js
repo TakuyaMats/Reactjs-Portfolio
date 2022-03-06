@@ -11,6 +11,8 @@ const ColStyle = styled.div`
     li {
         margin-bottom: 1rem;
         list-style: none;
+        color: grey;
+        font-size: 1.2rem;
     }
     a {
         color: var(--gray-1);

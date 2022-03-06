@@ -21,12 +21,12 @@ const AboutSection = (props) => {
                     <Container>
                         <h3 className={classes.h3}>About Me</h3>
                         <hr className={classes.hr}></hr>
-                        <p className={classes.p} style={{  display: 'flex', justifyContent: 'flex-end', color: 'grey' }}>             Previously a digital technician with experience in the photography industry, with skills in photo-shoots, management, and adobe photoshop.
+                        <p className={classes.p} style={{  display: 'flex', justifyContent: 'flex-end', color: 'grey' }}>Previously a digital technician with experience in the photography industry, with skills in photo-shoots, management, and adobe photoshop.
                         I love music and always love sharing new music with my friends.</p>
                     </Container>
                     <Container className={classes.image}>
                         <h4 className={classes.h4}>My Photography Site!</h4>
-                        <Button className={classes.btn} sx={{ margin: 8 }} variant="contained">Click Me!</Button>
+                        <Button className={classes.btn} variant="contained"><a href="https://takuyagallery.com/" target="_blank" rel="noreferrer" style={{ color: 'white' }}>Click Me!</a></Button>
                     </Container>
                 </Grid>
             </Grid>

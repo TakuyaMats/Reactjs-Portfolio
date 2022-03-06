@@ -14,19 +14,19 @@ const AboutSection = (props) => {
             <Grid container spacing={2} columns={16}>
                 <Grid item xs={8}>
                     <Container id="about-container">
-                        <img id="about-img" src={AboutMeImage} alt="About Illustration" style={{ height: '100%', width: '100%', align: "center"}}/>
+                        <img src={AboutMeImage} alt="About Illustration" className={classes.aboutMeImage}/>
                     </Container>
                 </Grid>
                 <Grid item xs={8}>
                     <Container>
                         <h3 className={classes.h3}>About Me</h3>
                         <hr className={classes.hr}></hr>
-                        <p className={classes.p} style={{  display: 'flex', justifyContent: 'flex-end', color: 'grey' }}>Previously a digital technician with experience in the photography industry, with skills in photo-shoots, management, and adobe photoshop.
+                        <p className={classes.p}>Previously a digital technician with experience in the photography industry, with skills in photo-shoots, management, and adobe photoshop.
                         I love music and always love sharing new music with my friends.</p>
                     </Container>
                     <Container className={classes.image}>
                         <h4 className={classes.h4}>My Photography Site!</h4>
-                        <Button className={classes.btn} variant="contained"><a href="https://takuyagallery.com/" target="_blank" rel="noreferrer" style={{ color: 'white' }}>Click Me!</a></Button>
+                        <Button className={classes.btn} variant="contained"><a className={classes.a} href="https://takuyagallery.com/" target="_blank" rel="noreferrer">Click Me!</a></Button>
                     </Container>
                 </Grid>
             </Grid>

@@ -46,7 +46,13 @@ const useStyles = makeStyles(() => ({
             marginLeft: 25,
         },
     },
+    a: {
+        color: 'white'
+    },
     p: {
+        display: 'flex',
+        justifyContent: 'center',
+        color: 'grey',
         [theme.breakpoints.up('lg')]: {
             fontSize: 18
         },
@@ -115,6 +121,11 @@ const useStyles = makeStyles(() => ({
             justifyContent: 'center',
             marginTop: 120,
         }
+    },
+    aboutMeImage: {
+        height: '100%',
+        width: '100%',
+        align: 'center',
     },
     btn: {
         [theme.breakpoints.up('lg')]: {

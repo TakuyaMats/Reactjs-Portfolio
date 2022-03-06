@@ -2,6 +2,7 @@ import React from 'react';
 // import PText from '../PText/PText';
 import FooterCol from '../FooterCol/FooterCol';
 import styled from 'styled-components';
+import { HashLink } from "react-router-hash-link";
 
 const FooterStyles = styled.div`
     padding-top: 8rem;
@@ -48,31 +49,7 @@ const Footer = () => {
                     </p>
                 </div>
                 <div className="footer__col2">
-                    <FooterCol 
-                        heading="important Links"
-                        Links={[
-                            {
-                                title: "Home",
-                                path: '/',
-                                type: "Link"
-                            },
-                            {
-                                title: "About",
-                                path: '/about',
-                                type: "Link"
-                            },
-                            {
-                                title: "Projects",
-                                path: '/projects',
-                                type: "Link"
-                            },
-                            {
-                                title: "Contact",
-                                path: '/contact',
-                                type: "Link"
-                            },
-                        ]}
-                    />
+                    <FooterCol heading="Important Links"></FooterCol>
                 </div>
                 <div className="footer__col3">
                     <FooterCol 

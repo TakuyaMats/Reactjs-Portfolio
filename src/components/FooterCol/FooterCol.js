@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { HashLink } from "react-router-hash-link";
 import styled from 'styled-components';
 
 const ColStyle = styled.div`
@@ -23,12 +24,22 @@ const FooterCol = ({
         {
             type: "Link",
             title: "Home",
-            path: "/home"
+            path: "/#"
+        },
+        {
+            type: "Link",
+            title: "Skill",
+            path: "/#skill"
         },
         {
             type: "Link",
             title: "About",
-            path: "/about"
+            path: "/#about"
+        },
+        {
+            type: "Link",
+            title: "Project",
+            path: "/#project"
         },
     ]
 }) => {
@@ -40,7 +51,7 @@ const FooterCol = ({
                     Links.map((item,index) => (
                         <li key={index}>
                             {item.type === 'Link' ? (
-                                <Link to={item.path}>{item.title}</Link>
+                                <HashLink smooth to={item.path}>{item.title}</HashLink>
                             ) : (
                                 <a href={item.path} target="_blank"
                                 rel="noreferrer">

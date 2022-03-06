@@ -77,11 +77,11 @@ const ResponsiveAppBar = () => {
                 display: { xs: 'block', md: 'none' },
                 }}
             >
-                <MenuItem onClick={handleCloseNavMenu}><HashLink to="/" style={{ color: 'black', textDecoration: 'inherit' }}>Home</HashLink></MenuItem>
-                <MenuItem onClick={handleCloseNavMenu}><HashLink to="/#skill" style={{ color: 'black', textDecoration: 'inherit' }}>Skill</HashLink></MenuItem>
-                <MenuItem onClick={handleCloseNavMenu}><HashLink to="/#about" style={{ color: 'black', textDecoration: 'inherit' }}>About</HashLink></MenuItem>
-                <MenuItem onClick={handleCloseNavMenu}><HashLink to="/#project" style={{ color: 'black', textDecoration: 'inherit' }}>Project</HashLink></MenuItem>
-                <MenuItem onClick={handleCloseNavMenu}><HashLink to="/#contact" style={{ color: 'black', textDecoration: 'inherit' }}>Contact</HashLink></MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}><HashLink smooth to="/" style={{ color: 'black', textDecoration: 'inherit' }}>Home</HashLink></MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}><HashLink smooth to="/#skill" style={{ color: 'black', textDecoration: 'inherit' }}>Skill</HashLink></MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}><HashLink smooth to="/#about" style={{ color: 'black', textDecoration: 'inherit' }}>About</HashLink></MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}><HashLink smooth to="/#project" style={{ color: 'black', textDecoration: 'inherit' }}>Project</HashLink></MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}><HashLink smooth to="/#contact" style={{ color: 'black', textDecoration: 'inherit' }}>Contact</HashLink></MenuItem>
             </Menu>
             </Box>
             <Typography
@@ -95,14 +95,14 @@ const ResponsiveAppBar = () => {
             Takuya Matsumoto
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                <HashLink to="/">
+                <HashLink smooth to="/">
                     <Button
                     key={1}
                     onClick={handleCloseNavMenu}
                     sx={{ margin: 5, fontFamily: 'meno-banner', fontWeight: '600px', fontSize: '16px', my: 2, color: 'black', display: 'block' }}
                     >Home</Button>
                 </HashLink>
-                <HashLink to="/#skill">
+                <HashLink smooth to="/#skill">
                     <Button
                     key={2}
                     onClick={handleCloseNavMenu}
@@ -116,14 +116,14 @@ const ResponsiveAppBar = () => {
                     sx={{ margin: 5, fontFamily: 'meno-banner', fontWeight: '600px', fontSize: '16px', my: 2, color: 'black', display: 'block' }}
                     >About</Button>
                 </HashLink>
-                <HashLink to="/#project">
+                <HashLink smooth to="/#project">
                     <Button
                     key={4}
                     onClick={handleCloseNavMenu}
                     sx={{ margin: 5, fontFamily: 'meno-banner', fontWeight: '600px', fontSize: '16px', my: 2, color: 'black', display: 'block' }}
                     >Projects</Button>
                 </HashLink>
-                <HashLink to="/#contact">
+                <HashLink smooth to="/#contact">
                     <Button
                     key={5}
                     onClick={handleCloseNavMenu}

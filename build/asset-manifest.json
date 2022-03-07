@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/Reactjs-Portfolio/static/css/main.b6aa2ef8.chunk.css",
+    "main.js": "/Reactjs-Portfolio/static/js/main.c064b329.chunk.js",
+    "main.js.map": "/Reactjs-Portfolio/static/js/main.c064b329.chunk.js.map",
+    "runtime-main.js": "/Reactjs-Portfolio/static/js/runtime-main.bdb8c000.js",
+    "runtime-main.js.map": "/Reactjs-Portfolio/static/js/runtime-main.bdb8c000.js.map",
+    "static/css/2.70a4e0db.chunk.css": "/Reactjs-Portfolio/static/css/2.70a4e0db.chunk.css",
+    "static/js/2.4e2d3654.chunk.js": "/Reactjs-Portfolio/static/js/2.4e2d3654.chunk.js",
+    "static/js/2.4e2d3654.chunk.js.map": "/Reactjs-Portfolio/static/js/2.4e2d3654.chunk.js.map",
+    "index.html": "/Reactjs-Portfolio/index.html",
+    "static/css/2.70a4e0db.chunk.css.map": "/Reactjs-Portfolio/static/css/2.70a4e0db.chunk.css.map",
+    "static/css/main.b6aa2ef8.chunk.css.map": "/Reactjs-Portfolio/static/css/main.b6aa2ef8.chunk.css.map",
+    "static/js/2.4e2d3654.chunk.js.LICENSE.txt": "/Reactjs-Portfolio/static/js/2.4e2d3654.chunk.js.LICENSE.txt",
+    "static/media/AboutMe.149c9a46.png": "/Reactjs-Portfolio/static/media/AboutMe.149c9a46.png",
+    "static/media/Fitness-Tracker.b1473963.png": "/Reactjs-Portfolio/static/media/Fitness-Tracker.b1473963.png",
+    "static/media/Tech-Blog.09018db9.png": "/Reactjs-Portfolio/static/media/Tech-Blog.09018db9.png",
+    "static/media/cube.6e2874b3.png": "/Reactjs-Portfolio/static/media/cube.6e2874b3.png",
+    "static/media/employeeTracker.9f2531f3.png": "/Reactjs-Portfolio/static/media/employeeTracker.9f2531f3.png",
+    "static/media/glasses.b6902c0a.png": "/Reactjs-Portfolio/static/media/glasses.b6902c0a.png",
+    "static/media/heroAvatar.40e89947.png": "/Reactjs-Portfolio/static/media/heroAvatar.40e89947.png",
+    "static/media/mug.da60dd4d.png": "/Reactjs-Portfolio/static/media/mug.da60dd4d.png",
+    "static/media/myAvatar.c3a5fecd.png": "/Reactjs-Portfolio/static/media/myAvatar.c3a5fecd.png",
+    "static/media/note-taker.cac82c12.png": "/Reactjs-Portfolio/static/media/note-taker.cac82c12.png",
+    "static/media/pokemon-deck-builder.ee9eb176.png": "/Reactjs-Portfolio/static/media/pokemon-deck-builder.ee9eb176.png",
+    "static/media/projectImg.771236e1.png": "/Reactjs-Portfolio/static/media/projectImg.771236e1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bdb8c000.js",
+    "static/css/2.70a4e0db.chunk.css",
+    "static/js/2.4e2d3654.chunk.js",
+    "static/css/main.b6aa2ef8.chunk.css",
+    "static/js/main.c064b329.chunk.js"
+  ]
+}

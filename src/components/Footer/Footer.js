@@ -1,12 +1,8 @@
 import React from 'react';
 import FooterCol from '../FooterCol/FooterCol';
 import styled from 'styled-components';
-import useStyles from './useStyles';
 
 const FooterStyles = styled.div`
-    /* padding-top: 8rem; */
-    /* background-color: var(--deep-dark); */
-    
     .container {
         display: flex;
         gap: 4rem;

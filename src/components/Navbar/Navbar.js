@@ -11,20 +11,13 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import customAvatar from '../../assets/images/myAvatar.png';
-import { Link } from 'react-router-dom';
 import { HashLink } from "react-router-hash-link";
+import useStyles from './useStyles';
 
-const pages = ['Home', 'Skills', 'About', 'Projects', 'Contact'];
-
-
-
-// const pages = {{ '<HashLink to="/">Home</HashLink>', '<HashLink to="/">Home</HashLink>' }}
-
-
-
-
-const ResponsiveAppBar = () => {
+const ResponsiveAppBar = (props) => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
+
+    const classes = useStyles(props);
 
     const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);

@@ -2,18 +2,7 @@ import { makeStyles } from '@mui/styles';
 import theme from '../../utils/theme';
 
 const useStyles = makeStyles(() => ({
-    header: {
-        display: 'flex', 
-        justifyContent: 'center', 
-        marginTop: '80px',
-    },
     paper: {
-        display: 'flex',
-        flexWrap: 'wrap',
-        flexGrow: 1,
-        backgroundColor: '#E5E8DD',
-        maxHeight: '100%',
-        marginTop: 12,
         [theme.breakpoints.down('md')]: {
             display: 'flex',
             flexDirection: 'column',
@@ -29,7 +18,6 @@ const useStyles = makeStyles(() => ({
         } 
     },
     h4: {
-        marginTop: '12px',
         [theme.breakpoints.down('lg')]: {
             marginLeft: '55px'
         },
@@ -257,73 +245,7 @@ const useStyles = makeStyles(() => ({
             height: 440,
             width: 350,
         }
-    },
-    tablet_1: {
-        height: 440,
-        width: 350,
-        backgroundColor: '#E5E8DD',
-        border: '2px solid #479547',
-        'border-radius': '20% 40% 40% 40% / 80% 20% 30% 25%',
-        [theme.breakpoints.down('lg')]: {
-            width: 220,
-            height: 320
-        },
-        [theme.breakpoints.down('md')]: {
-            height: 440,
-            width: 350,
-        }
-    },
-    tablet_2: {
-        height: 440,
-        width: 350,
-        backgroundColor: '#E5E8DD',
-        border: '2px solid #479547',
-        'border-radius': '20% 80% 40% 20% / 100% 30% 60% 85%',
-        [theme.breakpoints.down('lg')]: {
-            width: 220,
-            height: 320
-        },
-        [theme.breakpoints.down('md')]: {
-            height: 440,
-            width: 350,
-        }
-    },
-    tablet_3: {
-        height: 440,
-        width: 350,
-        backgroundColor: '#E5E8DD',
-        border: '2px solid #479547',
-        'border-radius': '20% 40% 60% 20% / 30% 50% 30% 25%',
-        [theme.breakpoints.down('lg')]: {
-            width: 220,
-            height: 320
-        },
-        [theme.breakpoints.down('md')]: {
-            height: 440,
-            width: 350,
-        }
-    },
-    img_1: {
-        height: '20%', 
-        width: '25%', 
-        marginLeft: '85px', 
-        marginTop: '12px', 
-        marginBottom: '2px'
-    },
-    img_2: {
-        height: '20%', 
-        width: '25%', 
-        marginLeft: '85px', 
-        marginTop: '12px', 
-        marginBottom: '4px'
-    },
-    img_3: {
-        height: '20%', 
-        width: '25%', 
-        marginLeft: '85px', 
-        marginTop: '12px', 
-        marginBottom: '6px'
-    },
+    }
 }));
 
 export default useStyles;

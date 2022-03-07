@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { HashLink } from "react-router-hash-link";
 import styled from 'styled-components';
 
@@ -15,8 +14,9 @@ const ColStyle = styled.div`
         font-size: 1.2rem;
     }
     a {
-        color: var(--gray-1);
+        color: grey;
         font-size: 1.1rem;
+        font-family: 'proxima-nova', sans-serif;
     }
 `;
 

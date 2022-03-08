@@ -3,11 +3,26 @@ import theme from '../../utils/theme';
 
 const useStyles = makeStyles(() => ({
     paper: {
+        [theme.breakpoints.up('lg')]: {
+            display: 'flex',
+            flexDirection: 'row',
+            marginTop: 35,
+
+        },
+        [theme.breakpoints.down('lg')]: {
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'center',
+            alignItems: 'center',
+            marginTop: 22,
+        },
         [theme.breakpoints.down('md')]: {
             display: 'flex',
             flexDirection: 'column',
-            marginLeft: '33%'
-        }
+            justifyContent: 'center',
+            alignItems: 'center',
+            marginTop: 22,
+        },
     },
     singlePaper: {
         [theme.breakpoints.down('md')]: {
@@ -237,6 +252,10 @@ const useStyles = makeStyles(() => ({
         },
     },
     tablet: {
+        [theme.breakpoints.up('lg')]: {
+            height: 440,
+            width: 350,
+        },
         [theme.breakpoints.down('lg')]: {
             width: 220,
             height: 320

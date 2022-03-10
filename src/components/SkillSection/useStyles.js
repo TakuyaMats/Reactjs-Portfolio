@@ -40,7 +40,7 @@ const useStyles = makeStyles(() => ({
             marginLeft: '115px'
         },
         [theme.breakpoints.down('md')]: {
-            marginLeft: '115px'
+            marginLeft: '60px'
         },
     },
     listItem1: {
@@ -51,7 +51,7 @@ const useStyles = makeStyles(() => ({
             marginLeft: 1
         },
         [theme.breakpoints.down('md')]: {
-            marginLeft: 22
+            marginLeft: 1
         },
     },
     listItem2: {
@@ -62,7 +62,7 @@ const useStyles = makeStyles(() => ({
             marginLeft: -10
         },
         [theme.breakpoints.down('md')]: {
-            marginLeft: 30
+            marginLeft: -10
         },
     },
     listItem3: {
@@ -73,7 +73,7 @@ const useStyles = makeStyles(() => ({
             marginLeft: -10
         },
         [theme.breakpoints.down('md')]: {
-            marginLeft: 10
+            marginLeft: -10
         },
     },
     listItem4: {
@@ -84,7 +84,7 @@ const useStyles = makeStyles(() => ({
             marginLeft: -10
         },
         [theme.breakpoints.down('md')]: {
-            marginLeft: 80
+            marginLeft: -10
         },
     },
     listItem5: {
@@ -95,7 +95,7 @@ const useStyles = makeStyles(() => ({
             marginLeft: -8
         },
         [theme.breakpoints.down('md')]: {
-            marginLeft: 22
+            marginLeft: -8
         },
     },
     listItem6: {
@@ -106,7 +106,7 @@ const useStyles = makeStyles(() => ({
             marginLeft: -8
         },
         [theme.breakpoints.down('md')]: {
-            marginLeft: 50
+            marginLeft: -8
         },
     },
     listItem7: {
@@ -117,7 +117,7 @@ const useStyles = makeStyles(() => ({
             marginLeft: -8
         },
         [theme.breakpoints.down('md')]: {
-            marginLeft: 110
+            marginLeft: -8
         },
     },
     listItem8: {
@@ -128,7 +128,7 @@ const useStyles = makeStyles(() => ({
             marginLeft: -8
         },
         [theme.breakpoints.down('md')]: {
-            marginLeft: 40
+            marginLeft: -8
         },
     },
     p1: {
@@ -142,9 +142,9 @@ const useStyles = makeStyles(() => ({
             marginBottom: -20,
         },
         [theme.breakpoints.down('md')]: {
-            fontSize: 18, 
-            marginRight: '2rem',
-            marginBottom: 10,
+            fontSize: 13, 
+            marginRight: '1rem',
+            marginBottom: -20,
         },
     },
     p2: {
@@ -159,9 +159,10 @@ const useStyles = makeStyles(() => ({
             marginLeft: 10
         },
         [theme.breakpoints.down('md')]: {
-            fontSize: 18, 
-            marginRight: '2rem',
-            marginBottom: 10,
+            fontSize: 13, 
+            marginRight: '1rem',
+            marginBottom: -20,
+            marginLeft: 10
         },
     },
     p3: {
@@ -176,9 +177,10 @@ const useStyles = makeStyles(() => ({
             marginLeft: 6
         },
         [theme.breakpoints.down('md')]: {
-            fontSize: 18, 
-            marginRight: '2rem',
-            marginBottom: 10
+            fontSize: 13,
+            marginRight: 1,
+            marginBottom: -20,
+            marginLeft: 6
         },
     },
     p4: {
@@ -193,10 +195,10 @@ const useStyles = makeStyles(() => ({
             marginLeft: 30
         },
         [theme.breakpoints.down('md')]: {
-            fontSize: 18, 
-            marginRight: '2rem',
-            marginLeft: 5,
-            marginBottom: 10,
+            fontSize: 13,
+            marginRight: 1,
+            marginBottom: -20,
+            marginLeft: 30
         },
     },
     p5: {
@@ -211,9 +213,10 @@ const useStyles = makeStyles(() => ({
             marginLeft: 60
         },
         [theme.breakpoints.down('md')]: {
-            fontSize: 18, 
-            marginRight: '2rem',
-            marginLeft: 5
+            fontSize: 13,
+            marginRight: '1rem',
+            marginBottom: -20,
+            marginLeft: 60
         },
     },
     p6: {
@@ -228,9 +231,10 @@ const useStyles = makeStyles(() => ({
             marginLeft: 6
         },
         [theme.breakpoints.down('md')]: {
-            fontSize: 18, 
-            marginRight: 8,
-            marginBottom: 10
+            fontSize: 13,
+            marginRight: 1,
+            marginBottom: -20,
+            marginLeft: 6
         },
     },
     p7: {
@@ -245,10 +249,10 @@ const useStyles = makeStyles(() => ({
             marginLeft: 70
         },
         [theme.breakpoints.down('md')]: {
-            fontSize: 18, 
-            marginRight: 8,
-            marginBottom: 10,
-            marginLeft: 20
+            fontSize: 13,
+            marginRight: 1,
+            marginBottom: -20,
+            marginLeft: 70
         },
     },
     tablet: {
@@ -261,8 +265,8 @@ const useStyles = makeStyles(() => ({
             height: 320
         },
         [theme.breakpoints.down('md')]: {
-            height: 440,
-            width: 350,
+            width: 220,
+            height: 320
         }
     }
 }));

@@ -70,7 +70,7 @@ const ResponsiveAppBar = (props) => {
                 display: { xs: 'block', md: 'none' },
                 }}
             >
-                <MenuItem onClick={handleCloseNavMenu}><HashLink smooth to="/#skill" style={{ color: 'black', textDecoration: 'inherit' }}>Skill</HashLink></MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}><HashLink smooth to="/#skill" style={{ color: 'black', textDecoration: 'inherit' }}>Skills</HashLink></MenuItem>
                 <MenuItem onClick={handleCloseNavMenu}><HashLink smooth to="/#about" style={{ color: 'black', textDecoration: 'inherit' }}>About</HashLink></MenuItem>
                 <MenuItem onClick={handleCloseNavMenu}><HashLink smooth to="/#project" style={{ color: 'black', textDecoration: 'inherit' }}>Project</HashLink></MenuItem>
                 <MenuItem onClick={handleCloseNavMenu}><HashLink smooth to="/#contact" style={{ color: 'black', textDecoration: 'inherit' }}>Contact</HashLink></MenuItem>
